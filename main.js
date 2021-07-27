@@ -15,21 +15,20 @@ document.getElementById("display_menu").innerHTML=htmldata;
 
 function add_item(){
 var htmldata;
-var item=document.getElementById("add_item").value;
+var Item =document.getElementById("add_item").value;
 menu_list_array.sort();
 htmldata="<section class='cards'>"
 for(var i=0;i<menu_list_array.lenght;i++){
     htmldata=htmldata+'<div class="cards"> '
-    +'<mig src="images/pizzaImg.png"/>' 
-      +menu_list_array]i
+    +'<mig src="pizzaImg.png"/>' 
+      +menu_list_array[i]
 +'</div>'
 }
-htmldata=htmldata+
-"</section>"
+htmldata=htmldata+"</section>"
 document.getElementById("display_addmenu").innerHTML=htmldata;
 
 
-}s
+}
 
 function add_top(){
     var item=document.getElementById("add_item").value;
